@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Wedding Invitation Creator ✨</h1>
+            <p>Design your perfect wedding invitation</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Customization Panel -->
+            <div class="customization-panel">
+                <h2>Customize Your Invitation</h2>
+                
+                <div class="form-group">
+                    <label for="bride-name">Bride's Name:</label>
+                    <input type="text" id="bride-name" placeholder="Enter bride's name" value="Sarah">
+                </div>
+
+                <div class="form-group">
+                    <label for="groom-name">Groom's Name:</label>
+                    <input type="text" id="groom-name" placeholder="Enter groom's name" value="Michael">
+                </div>
+
+                <div class="form-group">
+                    <label for="wedding-date">Wedding Date:</label>
+                    <input type="date" id="wedding-date" value="2026-06-15">
+                </div>
+
+                <div class="form-group">
+                    <label for="wedding-time">Wedding Time:</label>
+                    <input type="time" id="wedding-time" value="16:00">
+                </div>
+
+                <div class="form-group">
+                    <label for="venue-name">Venue Name:</label>
+                    <input type="text" id="venue-name" placeholder="Venue name" value="Grand Ballroom">
+                </div>
+
+                <div class="form-group">
+                    <label for="venue-address">Venue Address:</label>
+                    <textarea id="venue-address" placeholder="Full address" rows="3">123 Paradise Avenue, Garden City, CA 12345</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="theme-color">Theme Color:</label>
+                    <div class="color-options">
+                        <button class="color-btn" data-color="#ff9999" style="background-color: #ff9999;"></button>
+                        <button class="color-btn" data-color="#9999ff" style="background-color: #9999ff;"></button>
+                        <button class="color-btn active" data-color="#ffd700" style="background-color: #ffd700;"></button>
+                        <button class="color-btn" data-color="#ff99cc" style="background-color: #ff99cc;"></button>
+                        <button class="color-btn" data-color="#99ffcc" style="background-color: #99ffcc;"></button>
+                        <button class="color-btn" data-color="#ffcc99" style="background-color: #ffcc99;"></button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="invitation-style">Invitation Style:</label>
+                    <select id="invitation-style">
+                        <option value="classic">Classic Elegant</option>
+                        <option value="modern">Modern Minimal</option>
+                        <option value="romantic">Romantic Floral</option>
+                        <option value="rustic">Rustic Charm</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="custom-message">Personal Message:</label>
+                    <textarea id="custom-message" placeholder="Add a personal message (optional)" rows="3">Join us as we celebrate our love and commitment</textarea>
+                </div>
+
+                <div class="button-group">
+                    <button id="reset-btn" class="btn btn-secondary">Reset</button>
+                    <button id="download-btn" class="btn btn-primary">Download Invitation</button>
+                </div>
+            </div>
+
+            <!-- Preview Panel -->
+            <div class="preview-panel">
+                <h2>Preview</h2>
+                <div id="invitation-preview" class="invitation-card classic">
+                    <div class="invitation-header">
+                        <div class="decorative-element"></div>
+                        <h3>You're Invited</h3>
+                        <div class="decorative-element"></div>
+                    </div>
+                    
+                    <div class="invitation-body">
+                        <p class="intro-text">Together with their families</p>
+                        
+                        <div class="couple-names">
+                            <span id="preview-bride-name" class="bride-name">Sarah</span>
+                            <span class="and-symbol">&</span>
+                            <span id="preview-groom-name" class="groom-name">Michael</span>
+                        </div>
+                        
+                        <p class="invitation-text">request the honor of your presence at their wedding celebration</p>
+                        
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div>
+                                    <strong id="preview-date">June 15, 2026</strong>
+                                    <p id="preview-time">4:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div>
+                                    <strong id="preview-venue">Grand Ballroom</strong>
+                                    <p id="preview-address">123 Paradise Avenue, Garden City, CA 12345</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p id="preview-message" class="custom-message">Join us as we celebrate our love and commitment</p>
+                        
+                        <div class="rsvp-section">
+                            <p>RSVP by May 15, 2026</p>
+                        </div>
+                    </div>
+                    
+                    <div class="invitation-footer">
+                        <div class="decorative-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
