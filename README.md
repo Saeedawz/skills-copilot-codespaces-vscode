@@ -19,6 +19,14 @@ Or from a specific directory:
 pip3 install -r /path/to/repository/requirements.txt
 ```
 
+### Verification
+
+After installation, you can verify the packages are available by running:
+
+```bash
+python3 example.py
+```
+
 ### Requirements
 
 - Python 3.12 or higher
